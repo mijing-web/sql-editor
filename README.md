@@ -1,18 +1,23 @@
-# sql_editor
+# 前端vue项目中使用sql-formatter结合codemirror实现sql编辑器中的SQL代码格式化功能、自动匹配大小写功能、高亮功能
 
-> 前端vue项目中使用sql-formatter结合codemirror实现sql编辑器中的SQL代码格式化功能、自动匹配大小写功能、高亮功能
+> 主要实现的功能就是SQL编辑器，可以让SQL代码实现格式化代码、自动匹配大小写、高亮等功能
+> 详文可参考：https://blog.csdn.net/weixin_45851208/article/details/105118847
 
-## Build Setup
+## 使用方法：
 
 ``` bash
-# install dependencies
-npm install
+下载node_model文件：npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+本地运行项目：npm run dev
 
 # build for production with minification
-npm run build
+打包项目：npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+可能出现的报错问题及解决方法：
+
+1.vue.esm.js?efeb:628 [Vue warn]: Error in v-on handler: “TypeError: Cannot read properties of undefined (reading ‘format’)”
+解决方案：（1）降低版本，降至3.0或者2.0
+
+2.光标一直处于中间位置，出现这个问题还是需要检查大家自己的样式问题。本身它的封装是靠左显示的。
