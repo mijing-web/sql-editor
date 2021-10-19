@@ -1,6 +1,6 @@
 # sql_editor
 
-> A Vue.js project
+> 前端vue项目中使用sql-formatter结合codemirror实现sql编辑器中的SQL代码格式化功能、自动匹配大小写功能、高亮功能
 
 ## Build Setup
 
